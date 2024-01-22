@@ -13,9 +13,29 @@
             <img src="images/logo.svg" alt="our-logo"/>
         </div>
 
+        <div class="background-container">
         <h1>Welcome to Application</h1>
         <!-- This section should have a background image behind the Welcome to Application -->
-        <img src="images/background-extra-large.jpg" alt="temp"/>
+        <picture class="background-picture">
+            <!-- Extra Small Screens -->
+            <source media="(max-width: 768px)" srcset="images/background-extra-small.jpg">
+          
+            <!-- Small Screens -->
+            <source media="(max-width: 1024px)" srcset="images/background-small.jpg">
+          
+            <!-- Medium Screens -->
+            <source media="(max-width: 1920px)" srcset="images/background-medium.jpg">
+          
+            <!-- Large Screens -->
+            <source media="(max-width: 2560px)" srcset="images/background-large.jpg">
+          
+            <!-- Extra Large Screens -->
+            <source srcset="images/background-extra-large.jpg">
+          
+            <!-- Fallback for browsers that do not support the <picture> element -->
+            <img src="images/background-extra-large.jpg" alt="temp">
+          </picture>
+          </div>
     </header>
     <!-- I really wish we could have a flourish in the background of these feature-section -->
     <img src="images/flourish.png" alt="flourish"/>

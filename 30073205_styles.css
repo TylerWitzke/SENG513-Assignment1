@@ -1,19 +1,65 @@
-.logo-div {
+.hero-section {
+    background-color: #f8f8f8;
+    color: #333;
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
+    position: relative; /* Add position relative to establish a containing block */
+    overflow: hidden; /* Hide any overflow content */
+    text-align: center; /* Center-align the text within the hero-section */
 }
 
-.background-container {
+.logo-div {
     display: flex;
     justify-content: center;
+    z-index: 2; /* Higher z-index to place it in front of background-picture */
 }
 
 .background-picture {
+    width: 100%; /* Make sure the image covers the entire container */
     position: absolute;
+    z-index: 1; /* Lower z-index to place it behind logo-div and h1 */
+    bottom: 0;
+    left: 0;
 }
 
 h1 {
     position: relative;
-    z-index: 1;
+    z-index: 2; /* Higher z-index to place it in front of background-picture */
     color: white; /* Add any other styling for the h1 as needed */
 }
+
+svg {
+    width: 10%;
+}
+
+.features-section {
+    position: relative;
+    overflow: hidden;
+    background-color: darkblue;
+}
+
+.feature {
+    flex-direction: column;
+    display: flex;
+}
+
+.feature ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.feature li {
+    justify-content: center;
+    margin-bottom: 10px; /* Add spacing between list items */
+    display: flex; /* Use flex display to align number and text horizontally */
+}
+
+.feature button {
+    display: flex;
+    width: auto; /* Set width to auto for the button to take its natural size */
+    padding: 8px 16px; /* Adjust padding for the desired button size */
+    align-self: center; /* Center the button horizontally within its container */
+}
+

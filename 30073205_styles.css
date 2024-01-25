@@ -25,6 +25,14 @@
     justify-content: end;
 }
 
+.background-picture-temp {
+    width: 100%; /* Make sure the image covers the entire container */
+    position: absolute;
+    z-index: 1; /* Lower z-index to place it behind logo-div and h1 */
+    bottom: 0;
+    left: 0;
+}
+
 h1 {
     position: relative;
     z-index: 2; /* Higher z-index to place it in front of background-picture */

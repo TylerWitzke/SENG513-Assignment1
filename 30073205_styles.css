@@ -37,6 +37,7 @@ svg {
     position: relative;
     overflow: hidden;
     background-color: darkblue;
+    color: white;
 }
 
 .feature {
@@ -48,6 +49,7 @@ svg {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    z-index: 2;
 }
 
 .feature li {
@@ -57,9 +59,65 @@ svg {
 }
 
 .feature button {
-    display: flex;
-    width: auto; /* Set width to auto for the button to take its natural size */
-    padding: 8px 16px; /* Adjust padding for the desired button size */
-    align-self: center; /* Center the button horizontally within its container */
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ffffff; /* White border */
+    background-color: #3498db; /* Dark blue background */
+    color: #ffffff; /* White text color */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transition effect */
 }
 
+/* Hover effect */
+.feature button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    color: #f0f0f0; /* Lighter text color on hover */
+    border-color: #2980b9; /* Darker border on hover */
+}
+
+.about-section {
+    background-color:black;
+    color: white;
+}
+
+.cta-section {
+    background-color: #1a1a1a; /* Darker black for better contrast */
+    color: #ffffff; /* White text color */
+    padding: 40px; /* Add some padding for better spacing */
+    text-align: center; /* Center-align the content */
+}
+
+.cta-section h2 {
+    font-size: 24px; /* Adjust the heading font size */
+    margin-bottom: 10px; /* Add margin below the heading for spacing */
+}
+
+.cta-section p {
+    font-size: 16px; /* Adjust the paragraph font size */
+    margin-bottom: 20px; /* Add margin below the paragraph for spacing */
+}
+
+.cta-section button.contact-us {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ffffff; /* White border */
+    background-color: #3498db; /* Dark blue background */
+    color: #ffffff; /* White text color */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transition effect */
+}
+
+.cta-section button.contact-us:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    color: #f0f0f0; /* Lighter text color on hover */
+    border-color: #2980b9; /* Darker border on hover */
+}

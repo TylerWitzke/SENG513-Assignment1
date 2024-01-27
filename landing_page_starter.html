@@ -9,7 +9,7 @@
 <!-- the background colour of the page should compliment the other colours being used -->
 
 <body>
-    <header class="hero-section">
+    <header class="hero-section flex-center">
         <div class="logo-div">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
                 <!-- Use the <use> element to reference the symbol with id="logo" -->
@@ -18,7 +18,7 @@
         </div>
         <h1>Welcome to Application</h1>
         <!-- This section should have a background image behind the Welcome to Application -->
-        <picture class="background-picture">
+        <picture class="background-picture background-picture-top">
             <!-- Extra Small Screens -->
             <source media="(max-width: 640px)" srcset="images/background-extra-small.jpg">
 
@@ -44,7 +44,7 @@
 
     <!-- Each of these sections should have colors that complement the color of our background image and the foreground image -->
     <section class="features-section">
-        <picture class="background-picture-temp">
+        <picture class="background-picture">
         <img src="images/flourish.png" alt="flourish" class="background-image-flourish" />
     </picture>
     <article class="feature">
@@ -65,7 +65,7 @@
                 <li>&#x2022; Cost-effective</li>
                 <li>&#x2022; User-friendly</li>
             </ul>
-            <button>Shop Now!</button>
+            <button class="styled-button">Shop Now!</button>
         </article>
     </section>
     <section class="about-section">
@@ -95,7 +95,7 @@
     <footer class="cta-section">
         <h2>Contact Us</h2>
         <p>Get in touch for more information.</p>
-        <button class="contact-us">Contact Us</button>
+        <button class="styled-button">Contact Us</button>
     </footer>
 </body>
 
